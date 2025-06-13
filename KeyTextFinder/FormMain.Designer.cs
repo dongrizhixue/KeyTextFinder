@@ -3,12 +3,12 @@
     partial class FormMain
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,82 +23,68 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            btnStart = new Button();
-            rtxtFilePath = new RichTextBox();
-            lblFilePath = new Label();
-            lblKeyWord = new Label();
-            txtKeyWrod = new TextBox();
+            menuStrip1 = new MenuStrip();
+            功能ToolStripMenuItem = new ToolStripMenuItem();
+            按关键字搜索ToolStripMenuItem = new ToolStripMenuItem();
+            按关键字删除ToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // btnStart
+            // menuStrip1
             // 
-            btnStart.Location = new Point(12, 12);
-            btnStart.Name = "btnStart";
-            btnStart.Size = new Size(75, 23);
-            btnStart.TabIndex = 0;
-            btnStart.Text = "开始";
-            btnStart.UseVisualStyleBackColor = true;
+            menuStrip1.Items.AddRange(new ToolStripItem[] { 功能ToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 25);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
-            // rtxtFilePath
+            // 功能ToolStripMenuItem
             // 
-            rtxtFilePath.Location = new Point(93, 41);
-            rtxtFilePath.Name = "rtxtFilePath";
-            rtxtFilePath.Size = new Size(695, 98);
-            rtxtFilePath.TabIndex = 1;
-            rtxtFilePath.Text = "";
+            功能ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { 按关键字搜索ToolStripMenuItem, 按关键字删除ToolStripMenuItem });
+            功能ToolStripMenuItem.Name = "功能ToolStripMenuItem";
+            功能ToolStripMenuItem.Size = new Size(44, 21);
+            功能ToolStripMenuItem.Text = "功能";
             // 
-            // lblFilePath
+            // 按关键字搜索ToolStripMenuItem
             // 
-            lblFilePath.AutoSize = true;
-            lblFilePath.Location = new Point(31, 44);
-            lblFilePath.Name = "lblFilePath";
-            lblFilePath.Size = new Size(56, 17);
-            lblFilePath.TabIndex = 2;
-            lblFilePath.Text = "文件路径";
+            按关键字搜索ToolStripMenuItem.Name = "按关键字搜索ToolStripMenuItem";
+            按关键字搜索ToolStripMenuItem.Size = new Size(180, 22);
+            按关键字搜索ToolStripMenuItem.Text = "按关键字搜索";
+            按关键字搜索ToolStripMenuItem.Click += 按关键字搜索ToolStripMenuItem_Click;
             // 
-            // lblKeyWord
+            // 按关键字删除ToolStripMenuItem
             // 
-            lblKeyWord.AutoSize = true;
-            lblKeyWord.Location = new Point(103, 15);
-            lblKeyWord.Name = "lblKeyWord";
-            lblKeyWord.Size = new Size(80, 17);
-            lblKeyWord.TabIndex = 3;
-            lblKeyWord.Text = "提取的关键字";
-            // 
-            // txtKeyWrod
-            // 
-            txtKeyWrod.Location = new Point(189, 12);
-            txtKeyWrod.Name = "txtKeyWrod";
-            txtKeyWrod.Size = new Size(300, 23);
-            txtKeyWrod.TabIndex = 4;
+            按关键字删除ToolStripMenuItem.Name = "按关键字删除ToolStripMenuItem";
+            按关键字删除ToolStripMenuItem.Size = new Size(180, 22);
+            按关键字删除ToolStripMenuItem.Text = "按关键字删除";
+            按关键字删除ToolStripMenuItem.Click += 按关键字删除ToolStripMenuItem_Click;
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(txtKeyWrod);
-            Controls.Add(lblKeyWord);
-            Controls.Add(lblFilePath);
-            Controls.Add(rtxtFilePath);
-            Controls.Add(btnStart);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "FormMain";
-            Text = "根据关键字筛选文本";
+            Text = "筛选文本";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button btnStart;
-        private RichTextBox rtxtFilePath;
-        private Label lblFilePath;
-        private Label lblKeyWord;
-        private TextBox txtKeyWrod;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem 功能ToolStripMenuItem;
+        private ToolStripMenuItem 按关键字搜索ToolStripMenuItem;
+        private ToolStripMenuItem 按关键字删除ToolStripMenuItem;
     }
 }
