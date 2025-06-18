@@ -76,8 +76,7 @@ namespace KeyTextFinder
                     }
                     catch (Exception ex)
                     {
-
-                        throw;
+                        MessageBox.Show($"发生错误: {ex.Message}", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 // Create the output directory if it doesn't exist
@@ -111,7 +110,7 @@ namespace KeyTextFinder
 
             if (endIndex != -1)
             {
-                string dateString = line.Substring(0, endIndex);
+                string dateString = line[..endIndex];
                 return DateTime.TryParseExact(dateString, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out dateTime);
             }
 
